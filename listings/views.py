@@ -4,7 +4,7 @@ from .models import Listing
 
 
 # Create your views here.
-def all_listings(request):
+def get_all_listings(request):
     listings = Listing.objects.all()
     context = {"listings": listings}
     return render(
